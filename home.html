@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Near Miss</title>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="mainContainer">
+    <div class="home-screen">
+      <a
+        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2861872/#:~:text=The%20almost-win%2C%20often%20termed,or%20below%20the%20payoff%20line"
+        target="_blank"
+      >
+        <div class="title">Near Miss</div></a
+      >
+      <div class="buttons">
+        <a>
+          <button id="play" onclick="fadeOut('main.html')">Play</button>
+        </a>
+        <a>
+          <button id="learn" onclick="fadeOut('about.html')">Stats for Nerds</button>
+        </a>
+      </div>
+    </div>
+    <script src="js/coins.js"></script>
+    <script>
+        var titleScreen = document.querySelector('.mainContainer');
+
+        // Function to handle fade-out effect
+        function fadeOut(location) {
+          titleScreen.classList.add('fade-out');
+          setTimeout(function() {
+            titleScreen.style.display = 'none';
+            window.location.href = location;
+          }, 1000);
+        }
+    </script>
+  </body>
+</html>

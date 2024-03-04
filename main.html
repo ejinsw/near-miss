@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/slots.css"/>
+    <link rel="stylesheet" href="css/cards.css"/>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Near Miss</title>
+</head>
+
+<body>
+<div class="main-container">
+    <div class="top-container">
+        <a href="home.html">
+            <div class="home">
+            <span><i class="material-icons">home</i><span class="icon-text"></span>
+            </div>
+        </a>
+        <div class="profit-bar">
+            <div class="net-worth">
+                <div class="net-worth-title">Net Worth:</div>
+                <div class="net-worth-value" id="total">$0</div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="profit">
+                <div class="profit-title">Profit:</div>
+                <div class="profit-value" id="profit">$0</div>
+            </div>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="game-container">
+            <div class="snipbar">
+                <button class="button" onclick="showContent(slotsHTML, 'slots')">
+                    Slots
+                </button>
+                <button class="button" onclick="showContent(cardsHTML, 'cards')">
+                    Cards
+                </button>
+            </div>
+            <div id="target"></div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="graph-container">
+            <div class="graph-header">
+                <div class="month-container">
+                    <h3>Month:</h3>
+                    <div class="month">0</div>
+                </div>
+            </div>
+            <div class="graph">
+                <canvas
+                        id="myChart"
+                        width="1000"
+                        height="1000"
+                        style="
+                display: block;
+                box-sizing: border-box;
+                height: 1000px;
+                width: 1000px;
+              "
+                ></canvas>
+            </div>
+            <div class="graph-stats">
+                <div class="mean-container">
+                    <div class="mean-title"><b>Mean Net Worth:</b></div>
+                    <div class="mean-value">$0</div>
+                </div>
+                <div class="deviation-container">
+                    <div class="deviation-title"><b>Deviation from CD Yield:</b></div>
+                    <div class="deviation-value">0.00%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/snip.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/slots.js"></script>
+</body>
+</html>

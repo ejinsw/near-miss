@@ -1,0 +1,89 @@
+.title {
+    height: 25vh;
+    width: 105vw;
+    background-image: url(../background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-top: -2vw;
+    margin-left: -2vw;
+  }
+  
+  .home {
+    position: absolute;
+    top: 4vw;
+    left: 3vw;
+    border: solid gainsboro;
+    padding: 1vw;
+    border-radius: 1vw;
+    background-color: whitesmoke;
+  }
+  .home:hover {
+    background-color: transparent;
+  }
+  
+  .title1 {
+    color: white;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  p {
+    font-size: 1.5vw;
+  }
+  
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3vw;
+    line-height: 1.8;
+    margin-bottom: 5vw;
+    min-height: 100vh;
+    overflow: auto;
+  }
+  h1,
+  h2 {
+    color: #333;
+  }
+  p {
+    color: #666;
+  }
+  
+  .section {
+    margin-bottom: 1.5vw;
+  }
+  
+  #calculations-title {
+    margin-bottom: 0;
+  
+  }
+  
+  .calculations-container {
+  }
+  
+  .calculations-container b {
+    font-size: 2vw;
+    color: #333;
+  }
+  
+  .calculations-container ul {
+    border-left: rgb(183, 183, 183) solid 0.3vw;
+  
+  }
+  
+  .calculations-subtitle {
+    font-size: 1.5vw;
+  
+  }
+  
+  .calculations-container li {
+    font-size: 1.5vw;
+    color: #666;
+    list-style: none;
+    margin-bottom: 1vw;
+    text-indent: -2vw;
+    margin-left: 2vw;
+  }

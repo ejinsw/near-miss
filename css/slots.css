@@ -1,0 +1,86 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slots-main-container {
+    width: 100%;
+    height: 100%;
+    background: #032c0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doors {
+    display: flex;
+  }
+  
+  .door {
+    background: #fafafa;
+    width: 8vw;
+    height: 9vw;
+    overflow: hidden;
+    border-radius: 0.4vw;
+    margin: 1vw;
+    border: goldenrod solid;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+  }
+  
+  .boxes {
+    /* transform: translateY(0); */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+  }
+  
+  .buttons {
+    margin: 1vw 0vw 2vw 0vw;
+    display: flex;
+  }
+  
+  #spinner:hover,
+  #reseter:hover {
+    background-color: rgb(211, 208, 208);
+  }
+  
+  .spinner-text,
+  .reseter-text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+  
+  .button {
+    background: lightgray;
+    cursor: pointer;
+    font-size: 1.2vw;
+    margin: 0 0.2vw;
+    border: none;
+    border-radius: 0.4vw;
+    width: 5vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  

@@ -1,0 +1,131 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(../background.png);
+  font-family: Arial, sans-serif;
+}
+
+.home-screen {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  text-align: center;
+}
+/*
+.title {
+  background-color: white;
+  margin-top: 20vw;
+  font-size: 4vw;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    #a8e063,
+    #dced31,
+    #ffca28,
+    #ff9800,
+    #fb8c00,
+    #ff5722
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  background-color: white;
+  margin-top: 20vw;
+  font-size: 4vw;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    #b2ff59,
+    #69f0ae,
+    #40c4ff,
+    #7c4dff,
+    #ea80fc
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+a {
+  text-decoration: none;
+}
+.title {
+  cursor: pointer;
+  margin-top: 20vw;
+  font-size: 6vw;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    #b2ff59,
+    #69f0ae,
+    #40c4ff,
+    #7c4dff,
+    #ea80fc
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title:hover {
+  transform: scale(1.1);
+  background: linear-gradient(
+    to right,
+    #64ffda,
+    #00b0ff,
+    #651fff,
+    #d500f9,
+    #ff4081
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buttons {
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+button {
+  background-color: white;
+  color: #4caf50;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0.75vw 1.5vw;
+  margin: 1vw 0;
+  cursor: pointer;
+  font-size: 1.2vw;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+#gimmick {
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fade-out {
+  animation: fadeOutAnimation 1s ease forwards;
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
